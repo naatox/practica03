@@ -11,7 +11,7 @@ Backend:
 - Laravel 10
   
 Frontend:
--Ionic basado en Angular 16
+- Ionic basado en Angular 16
 
 Descarga del proyecto
 ================================================================================================================
