@@ -77,7 +77,7 @@ npm install -g @ionic/cli
 ```
 Luego
 ```bash
-cd frontendDumbo
+cd frontendmobile-practica03
 
 npm install 
 
