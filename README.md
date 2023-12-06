@@ -83,4 +83,4 @@ npm install
 
 ionic serve --o
 ```
-
+La aplicación se abrira en el navegador, para que esta se pueda visualizar de mejor manera, ingrese a inspecionar elemento y ponga la página en dispositivo móvil.
