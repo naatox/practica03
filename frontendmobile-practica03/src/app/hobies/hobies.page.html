@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Hobbies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let hobbie of userHobbies">
+    <ion-item href="#">
+      <ion-icon name="game-controller-outline" slot="start"></ion-icon>
+      <ion-label>{{hobbie.name}}
+        <p>{{hobbie.description}}</p>
+      </ion-label>
+
+    </ion-item>
+    <ion-button  (click)="edit(hobbie.id)" expand="block">Editar</ion-button>
+  </ion-card>
+
+</ion-content>
+
+
+
+<ion-card>
+
+  <ion-card-content>
+    Nota: Si no actualiza los datos, por favor, recargue la página.
+  </ion-card-content>
+</ion-card>
+

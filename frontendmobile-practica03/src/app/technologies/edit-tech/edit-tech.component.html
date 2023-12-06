@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Editar Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+
+    <ion-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <ion-list>
+          <ion-list>
+            <ion-item>
+              <ion-input label="Nombre" formControlName="name" placeholder="Nombre"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input label="Porcentaje" formControlName="percentage" placeholder="%"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input label="Año" formControlName="year" placeholder="XXXX"></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-list>
+
+        <div>
+          <ion-button type="submit">Editar</ion-button>
+
+        </div>
+      </form>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <ion-card id="alert" color="danger">
+    <strong>{{message}}</strong>
+  </ion-card>
+  <ion-card color="success">
+    <strong>{{success}}</strong>
+  </ion-card>
+
+</ion-content>
